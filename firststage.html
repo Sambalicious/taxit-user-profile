@@ -21,12 +21,17 @@
                 <div class="child">
                      <div class="uploadimage">
                             <br><br><br>
-                            <label for="picture-to-upload">Choose Your Image</label>
-                            <input name="picture" type="file" required><br><br><br>
-                           <button><span class="white-on-red">Upload Your Image </span></button>
-                         
-                     </div>
-                </div><br><br>
-                <button> <a href="secondpage.html"><span class="get-started">NEXT</span></a></button>
+                            <label for="pictures_upload">Please Upload Your Image</label> <br><br>
+                            <input name="pictures[]" type="file" required><br><br>
+                            <a href="#" class="btn btn-white btn-animated" 
+                            onclick="notEmpty(document.getElementById('required'), 'Please Enter a Value')"> Upload Image</a>
+                     </div><br> <br>
+                     
+                     <span><strong>Account Status:</strong></span>
+                   <input type="radio" name="status" value="Corporate" checked > Corporate
+                   <input type="radio" name="status" value="Individual"> Individual
+                   <br>
+                </div><br><br><br>
+                <a href="secondpage.html" class="btn btn-white btn-animated">Next page </a><br><br>
 </body>
 </html>
