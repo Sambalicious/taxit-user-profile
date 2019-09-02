@@ -17,6 +17,8 @@ header{
 
 .main{
     padding: 30px 10%;
+    margin: 100px 0 20px 0;
+    color: #141414;
 }
 
 span{
@@ -52,4 +54,5 @@ input[type="text"]{
 }
 h2{
     text-align: center;
+    color: #141414;
 }
