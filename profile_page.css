@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
 :root{
-    --primary-color: #15bb15;
+    --primary-color: #6666ff;
     --dark-color: #141414;
 }
 *{
@@ -10,38 +10,35 @@
     font-family: "Montserrat", sans-serif;
 }
 
-header{
-    height: 70px;
-    background-color: var(--dark-color);
-}
-
 .main{
-    padding: 30px 10%;
-    margin: 100px 0 20px 0;
+    padding: 10px 10%;
     color: #141414;
-}
-
-span{
-color: var(--primary-color);
-font-weight: 600;
-padding: 10px;
 }
 
 input[type="text"]{
     border-radius: 10px;
     outline: none;
     border: 1px solid var(--dark-color);
-    padding: 7px;
+    padding: 10px;
     text-align: center;
     color: darkgrey;
+    width: 350px;
+    font-size: 18px;
 }
 
 .name, .phone, .email, .address, .status{
-    padding: 10px;
+    padding: 30px;
 }
 .name_phone, .email_add{
     display: flex;
 }
+
+.name_phone span, .email_add span, .status span, .photo{
+color: var(--primary-color);
+font-weight: 600;
+padding: 10px;
+}
+
 .submit{
     margin-top: 10px;
     padding: 15px;
@@ -51,8 +48,19 @@ input[type="text"]{
     width: 30%;
     font-size: 18px;
     background: none;
+    outline: none;
+    cursor: pointer;
 }
 h2{
     text-align: center;
     color: #141414;
+}
+.submit:hover{
+    background-color: var(--primary-color);
+    color: antiquewhite;
+}
+.upload_image{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
 }
