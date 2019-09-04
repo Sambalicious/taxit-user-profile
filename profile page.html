@@ -7,59 +7,59 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Profile page</title>
     <link rel="stylesheet" href="profile_page.css">
-    <link rel="stylesheet" type="text/css" href="layout.css">
     <script src="https://kit.fontawesome.com/f618f790f8.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="profile_page.css">
+    <script src="https://kit.fontawesome.com/f618f790f8.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <header>
-        <div class="header-section">
-            <div class="top-nav">
-                <ul class="top-nav-link">
-                    <li><i class="fas fa-sign-in-alt"></i><a href="login.html">Sign In</a></li>
 
-                    <li><i class="fas fa-user-plus"></i><a href="register.html">Register</a></li>
-
+        <nav>
+            <div class="header">
+                <div class="logo">
+                    <a href="home.html"><img
+                            src="https://res.cloudinary.com/dcczd9zz5/image/upload/v1567174130/ff_nbwkbr.png"></a>
+                </div>
+                <ul class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact Us</a>
+                    <a href="profile page.html">Profile</a>
+                    <a href="team.html">Team</a>
+                    <a href="about.html">About Us</a>
+                    <a href="signin.html" id="menu-highlight"><button class="login-btn" type="button">Login</button></a>
                 </ul>
             </div>
-            <div class="logo-section">
-                <img src="https://res.cloudinary.com/dcczd9zz5/image/upload/v1567174130/ff_nbwkbr.png" width="300px">
-            </div>
-            <div class="main-nav">
-                <ul class="main-nav-link">
-
-                    <li><a href="index.html"><span class="fas fa-home"></span>&nbsp;Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="about.html">Profile</a></li>
-                    <li><a href="#"><span class="fas fa-phone"></span>&nbsp;Contact Us</a></li>
-                    <li><a href="#">Fund Projects</a></li>
-                    <li><a href="">Team</a></li>
-                </ul>
-            </div>
-        </div>
+        </nav>
     </header>
 
     <div class="main">
         <h2>User Profile</h2>
         <div class="upload_image">
-            <input type="file">
+            <span class="photo">Choose Photo</span>
+            <input type="file" name="upload_picture" accept="image/*">
         </div>
         <div class="form">
-            <form action="">
+            <form action="#" name="form_name" class="form_submit" onsubmit="return submitForm()">
                 <div class="name_phone">
                     <div class="name">
-                        <span>Name</span> <input type="text" placeholder="Fullname">
+                        <span>Name</span> <input type="text" placeholder="Fullname" required>
                     </div>
                     <div class="phone">
-                        <span>Phone</span> <input type="text" placeholder="Enter Phone">
+                        <span>Phone</span> <input type="text" placeholder="Enter Phone" required>
                     </div>
 
                 </div>
 
                 <div class="email_add">
                     <div class="email">
-                        <span>Email</span> <input type="text" placeholder="Email address">
+                        <span>Email</span> <input type="text" placeholder="Email address" required>
                     </div>
                     <div class="address">
                         <span>Address</span> <input type="text" placeholder="Enter address">
@@ -71,56 +71,75 @@
                     <input type="radio" name="status" value="Individual"> Individual
                 </div>
 
+                <input type="submit" class="submit" value="Submit">
+
+
             </form>
-            <button class="submit">Submit</button>
         </div>
 
     </div>
 
     <footer>
-        <div class="footer-section">
-            <div style="margin: 30px;">
-                <div>
-                    <h3>Contact Us</h3>
-                    <p>
-                        <span>block 6, 36 Adeboye Street, Lagos, Nigeria.</span><br>
-                        <span>Support: +234814-7657436, +234701-4360123</span><br>
-                        <span>mail to info@taxi.comt</span><br>
-                        <span>Lorem Ipsum</span>
-                    </p>
-                </div>
-                <div>
-                    <ul>
-                        <li><a>About us</a></li>
-                        <li><a>Features</a></li>
-                        <li><a>TaxIt.ng Mobile</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a>Pricing</a></li>
-                        <li><a>Lorem and Lorem</a></li>
-                        <li><a>Ipsum Lorem</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a>Support and FAQs</a></li>
-                        <li><a>Terms and Conditions</a></li>
-                        <li><a>Privacy Policy</a></li>
-                        <li><a>Lorem Ipsum</a></li>
-                    </ul>
+        <div class="logo">
+            <a href="home.html"><img
+                    src="https://res.cloudinary.com/dcczd9zz5/image/upload/v1567174130/ff_nbwkbr.png"></a>
+        </div>
+        <div class="footer-contents">
+            <div class="about">
+
+
+                <h4>About Us</h4>
+                <p>TaxIt.NG is a financial non-governmental organisation built by a team of young interns and change
+                    agents
+                    to solve the persisting problem of tax collection and poor accountable utilisation of tax revenue to
+                    create social development and benefits
+                    to taxpayers... <a href="">More</a> </p>
+            </div>
+            <div class="news">
+                <h4>Newsletter</h4>
+                <p>Stay updated with our latest news & products</p>
+                <div id="embed-signup">
+                    <form target="_blank"
+                        action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                        method="get" class="subscribe_form relative">
+                        <div>
+                            <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Email Address '" required="" type="email">
+                            <button id="go-btn">Go</button>
+                        </div>
+
+                    </form>
                 </div>
             </div>
-            <hr style="margin:0px 50px;">
-            <div>
-                <p>Copyright © 2019 Team Helsinki. All Rights Reserved | TaxIt.ng is a platform designed & developed by
-                    Team
-                    Helsinki.</p>
+            <div class="contact">
+                <h4>Contact Us</h4>
+
+                <p>3, Birrel Avenue <br> Yaba, Lagos <br>
+                    <a href="mailto:info@taxit.ng">info@taxit.ng</a> <br> 01-2345678 <br> 08489102638, 8920271538. <br>
+                </p>
+
+            </div>
+            <div class="social">
+                <h4>Follow Us</h4>
+                <div class="sm">
+                    <a href="#"><i class="fab fa-twitter"></i></a> &nbsp &nbsp
+                    <a href="#"><i class="fab fa-facebook-square"></i></a> &nbsp &nbsp
+                    <a href="#"><i class="fab fa-instagram"></i></a> &nbsp &nbsp
+                    <a href="#"><i class="fab fa-whatsapp"></i></a> &nbsp &nbsp
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> &nbsp &nbsp All rights reserved | Team Helsinki </p>
             </div>
         </div>
     </footer>
 
+    <script src="profile_page.js"></script>
 </body>
 
 </html>
