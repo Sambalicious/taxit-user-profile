@@ -13,9 +13,11 @@
 .main{
     padding: 10px 10%;
     color: #141414;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
-input[type="text"]{
+input[type="text"], input[type="email"]{
     border-radius: 10px;
     outline: none;
     border: 1px solid var(--dark-color);
@@ -24,28 +26,31 @@ input[type="text"]{
     color: darkgrey;
     width: 350px;
     font-size: 18px;
+    margin-bottom: 30px;
 }
 
-.name, .phone, .email, .address, .status{
+.name, .phone, .email, .address,{
     padding: 30px;
 }
 .name_phone, .email_add{
     display: flex;
 }
 
-.name_phone span, .email_add span, .status span, .photo{
+.name_phone span, .email_add span,
+ .status span, .photo
+ {
 color: var(--primary-color);
 font-weight: 600;
 padding: 10px;
 }
 
-.submit{
+.submit, .upload_btn{
     margin-top: 10px;
     padding: 15px;
     border-radius: 50px;
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
-    width: 30%;
+    
     font-size: 18px;
     background: none;
     outline: none;
@@ -54,13 +59,40 @@ padding: 10px;
 h2{
     text-align: center;
     color: #141414;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
-.submit:hover{
+.submit:hover, .upload_btn:hover{
     background-color: var(--primary-color);
     color: antiquewhite;
 }
-.upload_image{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 15px;
+
+main{
+    margin: 0 auto;
+    padding: 30px;
+    margin-bottom: -80px;
+}
+
+.upload_btn2{
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    width: 30%;
+    font-size: 18px;
+    background: var(--primary-color);
+    outline: none;
+    cursor: pointer;
+}
+
+main :nth-child(1){
+    margin-bottom: 10px;
+}
+.status{
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: #faebd7;
 }
